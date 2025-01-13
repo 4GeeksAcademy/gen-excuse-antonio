@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Excusas</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Generador de Excusas</h1>
+    <form id="excuseForm">
+        <label for="who">¿Quién?</label>
+        <input type="text" id="who" placeholder="Mi perro, mi hermano, etc." required>
+
+        <label for="action">¿Qué hizo?</label>
+        <input type="text" id="action" placeholder="Rompió, perdió, olvidó, etc." required>
+
+        <label for="what">¿Qué?</label>
+        <input type="text" id="what" placeholder="Mis deberes, el teléfono, las llaves, etc." required>
+
+        <label for="when">¿Cuándo?</label>
+        <input type="text" id="when" placeholder="Ayer, esta mañana, la semana pasada, etc." required>
+
+        <button type="button" onclick="generateExcuse()">Generar Excusa</button>
+    </form>
+
+    <div class="excuse" id="excuseOutput"></div>
+    <script src="app.js"></script>
+
+</body>
+</html>
